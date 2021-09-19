@@ -1,0 +1,7 @@
+节点管理器无法使用启动
+修改yarn-site.xml中的shuffle为mapreduce_shuffle过滤
+具体是
+<property>
+<name>yarn.nodemanager.aux-services</name>
+<value>mapreduce_shuffle</value>
+</property>
